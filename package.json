@@ -1,0 +1,47 @@
+{
+  "name": "timetap",
+  "version": "1.0.0",
+  "description": "Timetap - Simple appointment booking RESTful APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node"
+  },
+  "keywords": [],
+  "author": "Debashis Barman <hello@debashisbarman.in> (http://www.debashisbarman.in)",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^2.0.0",
+    "body-parser": "^1.18.2",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "express-validation": "^1.0.2",
+    "joi": "^13.1.2",
+    "jsonwebtoken": "^8.2.1",
+    "moment": "^2.22.0",
+    "mongoose": "^5.0.14",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "nodemon": "^1.17.3"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "es6": true,
+      "browser": true
+    },
+    "rules": {
+      "brace-style": ["error", "stroustrup"],
+      "comma-dangle": ["error", "never"],
+      "no-unused-vars": ["warn"],
+      "no-var": ["off"],
+      "one-var": ["off"],
+      "no-console": ["off"]
+    }
+  }
+}

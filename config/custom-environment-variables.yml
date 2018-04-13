@@ -1,0 +1,4 @@
+auth:
+  secret: JWT_SECRET
+database:
+  uri: DB_URI

@@ -20,10 +20,9 @@ To get the access token
 curl --request POST \
      --url http://localhost:8000/api/auth/token \
      --header 'Content-Type: application/json' \
-     --data: {
+     --data: '{
        "email": [Your email address],
-       "password": [Your password]
-     }
+       "password": [Your password]}'
 ```
 
 ### Users
@@ -39,9 +38,9 @@ curl --request POST \
      --url http://localhost:8000/api/user/createUser \
      --header 'Content-Type: application/json' \
      --data '{
-       "name": "Trishna Barman",
-       "email": "trishna@example.com",
-       "password": "Admin123!"}'
+       "name": [Your full name],
+       "email": [Your email address],
+       "password": [Your password]}'
 ```
 
 To create a **admin** user.
@@ -51,8 +50,8 @@ curl --request POST \
      --url http://localhost:8000/api/user/createUser \
      --header 'Content-Type: application/json' \
      --data '{
-       "name": "Trishna Barman",
-       "email": "trishna@example.com",
-       "password": "Admin123!"
+       "name": [Your full name],
+       "email": [Your email address],
+       "password": [Your password]'
        "role": "admin"}'
 ```

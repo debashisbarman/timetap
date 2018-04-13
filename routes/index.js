@@ -7,6 +7,14 @@ import auth from '../middlewares/auth';
 
 const router = express.Router();
 
+router.get('/api-status', (req, res) =>
+  res.status(200).json({
+    success: true,
+    params: {
+      message: 'Sucessful, TimeTap API is running.'
+    }
+  }));
+
 router.use('/auth', authRoutes);
 router.use('/user', userRoutes);
 

@@ -18,7 +18,7 @@ To get the access token
 
 ```
 curl --request POST \
-     --url https://api.timetap.io/api/auth/token \
+     --url http://localhost:8000/api/auth/token \
      --header 'Content-Type: application/json' \
      --data: {
        "email": [Your email address],
@@ -36,7 +36,7 @@ To create a **regular** user.
 
 ```
 curl --request POST \
-     --url https://api.timetap.io/api/user/createUser \
+     --url http://localhost:8000/api/user/createUser \
      --header 'Content-Type: application/json' \
      --data '{
        "name": "Trishna Barman",
@@ -48,7 +48,7 @@ To create a **admin** user.
 
 ```
 curl --request POST \
-     --url https://api.timetap.io/api/user/createUser \
+     --url http://localhost:8000/api/user/createUser \
      --header 'Content-Type: application/json' \
      --data '{
        "name": "Trishna Barman",
